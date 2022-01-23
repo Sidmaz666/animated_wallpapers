@@ -7,7 +7,7 @@ A Simple script to set live background wallpaper using feh.
 
 1. feh
 
-## Convert GIFs or Video to png's [imagemagick]
+## Convert GIFs or Video to png's [immagemagick]
 
 Use the following command to extract all the frames from a gif and put all the images in a directory.
 **Ensure that all the images are renamed in a serial order for this to work**
