@@ -14,7 +14,7 @@ Use the following command to extract all the frames from a gif and put all the i
 
         convert -verbose -coalesce input.gif output.png  
 
-![preview](https://github.com/Sidmaz666/animated_wallpapers/blob/main/preview.gif)
+<img src="https://github.com/Sidmaz666/animated_wallpapers/blob/main/preview.gif" width="100%">
 
 ### Installation
 
