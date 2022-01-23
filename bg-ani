@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [[ -z "$1" ]] ; then
+
+ imgs="$HOME/Pictures/animated_wallpapers/train_rain_drops"
+
+ [[ ! -d "$imgs" ]] && echo "No directory Selected!" && exit
+
+else
+  imgs=$1
+fi
+
+num=0
+
+tol_imgs="$(ls $imgs | sed 's/.png//g' | sort -n | tail -n1)"
+
+while true
+do
+  feh --bg-fill $imgs/$num.png
+  ((num=num+1))
+  if [[ $num -eq $tol_imgs ]]; then
+    num=0
+  fi
+  sleep 0.2 
+done
+
