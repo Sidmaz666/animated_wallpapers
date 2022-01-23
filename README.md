@@ -4,7 +4,7 @@
 
 convert -verbose -coalesce input.gif output.png  
 
-![preview](https://github.com/Sidmaz666/animated_wallpapers/blob/main/animated_wallpapers/preview.gif?raw=true)
+![preview](https://github.com/Sidmaz666/animated_wallpapers/blob/main/preview.gif)
 
 ### Copy the bg-ani file to /usr/bin 
 ### Run the command bg-ani in terminal with a folder path to the pngs.
