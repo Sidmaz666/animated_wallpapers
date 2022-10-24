@@ -14,6 +14,14 @@ Use the following command to extract all the frames from a gif and put all the i
 
         convert -verbose -coalesce input.gif output.png  
 
+## Use the Script To Automatically create frames for Mulitple GIFS!
+
+	cframe [PATH TO DIRECTORY CONTAINING GIFS] [OUTPUT DIRECTORY]
+	
+	Example:
+
+		cframe ./gifs ./
+
 <img src="https://github.com/Sidmaz666/animated_wallpapers/blob/main/preview.gif" width="100%">
 
 ### Installation

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+DIR=$1
+ODIR=$2
+
+[[ -z $DIR ]] ||  [[ -z $ODIR ]] && exit
+
+for i in $(ls $DIR)
+do
+  num=0
+  DIRNAME=$(echo $i | sed 's/\..*//g')
+
+  mkdir -p $DIRNAME
+  convert -verbose -coalesce $DIR/$i  $ODIR/$DIRNAME/img.png
+
+  for j in $(ls $ODIR/$DIRNAME)
+  do
+	mv $ODIR/$DIRNAME/$j $ODIR/$DIRNAME/$num.png	
+	num=$(($num+1))
+  done
+
+done
